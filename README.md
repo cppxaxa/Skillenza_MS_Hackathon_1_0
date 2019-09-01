@@ -2,6 +2,8 @@
 
 Online Link: http://40.71.35.124:8000
 
+Model Accuracy achieved: 83%
+
 Developed by team: DarkKnights
 
 with the efforts of
