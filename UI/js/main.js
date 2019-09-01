@@ -68,9 +68,9 @@ $(document).ready(function() {
                 toolTipContent: "<b>{label}:</b> {y} (#percent%)",
                 dataPoints: [
                     { y: 67, label: "Co-workers" },
-                    { y: 28, label: "Supervisor" },
-                    { y: 28, label: "Mental Health Interview" },
-                    { y: 28, label: "Physical Health Interview" }
+                    { y: 58, label: "Supervisor" },
+                    { y: 70, label: "Mental Health Interview" },
+                    { y: 42, label: "Physical Health Interview" }
                 ]
             }]
         });
