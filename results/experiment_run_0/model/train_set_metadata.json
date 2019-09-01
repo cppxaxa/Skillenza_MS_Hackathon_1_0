@@ -1,0 +1,734 @@
+{
+    "Country": {
+        "idx2str": [
+            "<UNK>",
+            "United States",
+            "United Kingdom",
+            "Canada",
+            "Germany",
+            "Netherlands",
+            "Australia",
+            "Ireland",
+            "France",
+            "India",
+            "Switzerland",
+            "Sweden",
+            "New Zealand",
+            "Poland",
+            "Italy",
+            "Brazil",
+            "South Africa",
+            "Belgium",
+            "Bulgaria",
+            "Russia",
+            "Mexico",
+            "Austria",
+            "Israel",
+            "Portugal",
+            "Finland",
+            "Singapore",
+            "Denmark",
+            "Slovenia",
+            "Costa Rica",
+            "Colombia",
+            "Latvia",
+            "Romania",
+            "Zimbabwe",
+            "Spain",
+            "Uruguay",
+            "Bosnia and Herzegovina",
+            "Hungary",
+            "Japan",
+            "Nigeria",
+            "Croatia",
+            "Norway",
+            "Thailand"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "Australia": 17,
+            "Austria": 3,
+            "Belgium": 4,
+            "Bosnia and Herzegovina": 1,
+            "Brazil": 4,
+            "Bulgaria": 3,
+            "Canada": 61,
+            "Colombia": 1,
+            "Costa Rica": 1,
+            "Croatia": 1,
+            "Denmark": 2,
+            "Finland": 2,
+            "France": 11,
+            "Germany": 37,
+            "Hungary": 1,
+            "India": 8,
+            "Ireland": 13,
+            "Israel": 3,
+            "Italy": 5,
+            "Japan": 1,
+            "Latvia": 1,
+            "Mexico": 3,
+            "Netherlands": 18,
+            "New Zealand": 6,
+            "Nigeria": 1,
+            "Norway": 1,
+            "Poland": 5,
+            "Portugal": 2,
+            "Romania": 1,
+            "Russia": 3,
+            "Singapore": 2,
+            "Slovenia": 1,
+            "South Africa": 4,
+            "Spain": 1,
+            "Sweden": 6,
+            "Switzerland": 6,
+            "Thailand": 1,
+            "United Kingdom": 149,
+            "United States": 607,
+            "Uruguay": 1,
+            "Zimbabwe": 1
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "Australia": 6,
+            "Austria": 21,
+            "Belgium": 17,
+            "Bosnia and Herzegovina": 35,
+            "Brazil": 15,
+            "Bulgaria": 18,
+            "Canada": 3,
+            "Colombia": 29,
+            "Costa Rica": 28,
+            "Croatia": 39,
+            "Denmark": 26,
+            "Finland": 24,
+            "France": 8,
+            "Germany": 4,
+            "Hungary": 36,
+            "India": 9,
+            "Ireland": 7,
+            "Israel": 22,
+            "Italy": 14,
+            "Japan": 37,
+            "Latvia": 30,
+            "Mexico": 20,
+            "Netherlands": 5,
+            "New Zealand": 12,
+            "Nigeria": 38,
+            "Norway": 40,
+            "Poland": 13,
+            "Portugal": 23,
+            "Romania": 31,
+            "Russia": 19,
+            "Singapore": 25,
+            "Slovenia": 27,
+            "South Africa": 16,
+            "Spain": 33,
+            "Sweden": 11,
+            "Switzerland": 10,
+            "Thailand": 41,
+            "United Kingdom": 2,
+            "United States": 1,
+            "Uruguay": 34,
+            "Zimbabwe": 32
+        },
+        "vocab_size": 42
+    },
+    "Gender": {
+        "idx2str": [
+            "<UNK>",
+            "male",
+            "female",
+            "trans"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "female": 190,
+            "male": 794,
+            "trans": 15
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "female": 2,
+            "male": 1,
+            "trans": 3
+        },
+        "vocab_size": 4
+    },
+    "age_range": {
+        "idx2str": [
+            "<UNK>",
+            "31-65",
+            "21-30",
+            "0-20"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "0-20": 18,
+            "21-30": 455,
+            "31-65": 526,
+            "<UNK>": 0
+        },
+        "str2idx": {
+            "0-20": 3,
+            "21-30": 2,
+            "31-65": 1,
+            "<UNK>": 0
+        },
+        "vocab_size": 4
+    },
+    "anonymity": {
+        "idx2str": [
+            "<UNK>",
+            "Don't know",
+            "Yes",
+            "No"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "Don't know": 654,
+            "No": 51,
+            "Yes": 294
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "Don't know": 1,
+            "No": 3,
+            "Yes": 2
+        },
+        "vocab_size": 4
+    },
+    "benefits": {
+        "idx2str": [
+            "<UNK>",
+            "Yes",
+            "Don't know",
+            "No"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "Don't know": 324,
+            "No": 295,
+            "Yes": 380
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "Don't know": 2,
+            "No": 3,
+            "Yes": 1
+        },
+        "vocab_size": 4
+    },
+    "care_options": {
+        "idx2str": [
+            "<UNK>",
+            "No",
+            "Yes",
+            "Not sure"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "No": 404,
+            "Not sure": 250,
+            "Yes": 345
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "No": 1,
+            "Not sure": 3,
+            "Yes": 2
+        },
+        "vocab_size": 4
+    },
+    "coworkers": {
+        "idx2str": [
+            "<UNK>",
+            "Some of them",
+            "No",
+            "Yes"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "No": 199,
+            "Some of them": 621,
+            "Yes": 179
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "No": 2,
+            "Some of them": 1,
+            "Yes": 3
+        },
+        "vocab_size": 4
+    },
+    "family_history": {
+        "idx2str": [
+            "<UNK>",
+            "No",
+            "Yes"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "No": 619,
+            "Yes": 380
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "No": 1,
+            "Yes": 2
+        },
+        "vocab_size": 3
+    },
+    "leave": {
+        "idx2str": [
+            "<UNK>",
+            "Don't know",
+            "Somewhat easy",
+            "Very easy",
+            "Somewhat difficult",
+            "Very difficult"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "Don't know": 438,
+            "Somewhat difficult": 106,
+            "Somewhat easy": 206,
+            "Very difficult": 80,
+            "Very easy": 169
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "Don't know": 1,
+            "Somewhat difficult": 4,
+            "Somewhat easy": 2,
+            "Very difficult": 5,
+            "Very easy": 3
+        },
+        "vocab_size": 6
+    },
+    "mental_health_consequence": {
+        "idx2str": [
+            "<UNK>",
+            "No",
+            "Maybe",
+            "Yes"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "Maybe": 363,
+            "No": 407,
+            "Yes": 229
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "Maybe": 2,
+            "No": 1,
+            "Yes": 3
+        },
+        "vocab_size": 4
+    },
+    "mental_health_interview": {
+        "idx2str": [
+            "<UNK>",
+            "No",
+            "Maybe",
+            "Yes"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "Maybe": 169,
+            "No": 796,
+            "Yes": 34
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "Maybe": 2,
+            "No": 1,
+            "Yes": 3
+        },
+        "vocab_size": 4
+    },
+    "mental_vs_physical": {
+        "idx2str": [
+            "<UNK>",
+            "Don't know",
+            "Yes",
+            "No"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "Don't know": 446,
+            "No": 270,
+            "Yes": 283
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "Don't know": 1,
+            "No": 3,
+            "Yes": 2
+        },
+        "vocab_size": 4
+    },
+    "no_employees": {
+        "idx2str": [
+            "<UNK>",
+            "6-25",
+            "26-100",
+            "More than 1000",
+            "100-500",
+            "1-5",
+            "500-1000"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "1-5": 128,
+            "100-500": 141,
+            "26-100": 229,
+            "500-1000": 53,
+            "6-25": 231,
+            "<UNK>": 0,
+            "More than 1000": 217
+        },
+        "str2idx": {
+            "1-5": 5,
+            "100-500": 4,
+            "26-100": 2,
+            "500-1000": 6,
+            "6-25": 1,
+            "<UNK>": 0,
+            "More than 1000": 3
+        },
+        "vocab_size": 7
+    },
+    "obs_consequence": {
+        "idx2str": [
+            "<UNK>",
+            "No",
+            "Yes"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "No": 864,
+            "Yes": 135
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "No": 1,
+            "Yes": 2
+        },
+        "vocab_size": 3
+    },
+    "phys_health_consequence": {
+        "idx2str": [
+            "<UNK>",
+            "No",
+            "Maybe",
+            "Yes"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "Maybe": 219,
+            "No": 735,
+            "Yes": 45
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "Maybe": 2,
+            "No": 1,
+            "Yes": 3
+        },
+        "vocab_size": 4
+    },
+    "phys_health_interview": {
+        "idx2str": [
+            "<UNK>",
+            "Maybe",
+            "No",
+            "Yes"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "Maybe": 438,
+            "No": 400,
+            "Yes": 161
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "Maybe": 1,
+            "No": 2,
+            "Yes": 3
+        },
+        "vocab_size": 4
+    },
+    "remote_work": {
+        "idx2str": [
+            "<UNK>",
+            "No",
+            "Yes"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "No": 706,
+            "Yes": 293
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "No": 1,
+            "Yes": 2
+        },
+        "vocab_size": 3
+    },
+    "seek_help": {
+        "idx2str": [
+            "<UNK>",
+            "No",
+            "Don't know",
+            "Yes"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "Don't know": 296,
+            "No": 508,
+            "Yes": 195
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "Don't know": 2,
+            "No": 1,
+            "Yes": 3
+        },
+        "vocab_size": 4
+    },
+    "self_employed": {
+        "idx2str": [
+            "<UNK>",
+            "No",
+            "Yes"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "No": 877,
+            "Yes": 122
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "No": 1,
+            "Yes": 2
+        },
+        "vocab_size": 3
+    },
+    "supervisor": {
+        "idx2str": [
+            "<UNK>",
+            "Yes",
+            "No",
+            "Some of them"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "No": 306,
+            "Some of them": 275,
+            "Yes": 418
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "No": 2,
+            "Some of them": 3,
+            "Yes": 1
+        },
+        "vocab_size": 4
+    },
+    "tech_company": {
+        "idx2str": [
+            "<UNK>",
+            "Yes",
+            "No"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "No": 168,
+            "Yes": 831
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "No": 2,
+            "Yes": 1
+        },
+        "vocab_size": 3
+    },
+    "treatment": {
+        "idx2str": [
+            "<UNK>",
+            "No",
+            "Yes"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "No": 508,
+            "Yes": 491
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "No": 1,
+            "Yes": 2
+        },
+        "vocab_size": 3
+    },
+    "wellness_program": {
+        "idx2str": [
+            "<UNK>",
+            "No",
+            "Yes",
+            "Don't know"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "<UNK>": 0,
+            "Don't know": 158,
+            "No": 658,
+            "Yes": 183
+        },
+        "str2idx": {
+            "<UNK>": 0,
+            "Don't know": 3,
+            "No": 1,
+            "Yes": 2
+        },
+        "vocab_size": 4
+    }
+}

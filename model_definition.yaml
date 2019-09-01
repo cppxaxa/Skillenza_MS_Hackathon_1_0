@@ -1,0 +1,111 @@
+input_features:
+    -
+        name: Gender
+        type: category
+        lowercase: true
+    -
+        name: Country
+        type: category
+        lowercase: true
+    -
+        name: self_employed
+        type: category
+        lowercase: true
+    -
+        name: family_history
+        type: category
+        lowercase: true
+    -
+        name: no_employees
+        type: category
+        lowercase: true
+    -
+        name: remote_work
+        type: category
+        lowercase: true
+    -
+        name: tech_company
+        type: category
+        lowercase: true
+    -
+        name: benefits
+        type: category
+        lowercase: true
+    -
+        name: care_options
+        type: category
+        lowercase: true
+    -
+        name: wellness_program
+        type: category
+        lowercase: true
+    -
+        name: seek_help
+        type: category
+        lowercase: true
+    -
+        name: anonymity
+        type: category
+        lowercase: true
+    -
+        name: leave
+        type: category
+        lowercase: true
+    -
+        name: mental_health_consequence
+        type: category
+        lowercase: true
+    -
+        name: phys_health_consequence
+        type: category
+        lowercase: true
+    -
+        name: coworkers
+        type: category
+        lowercase: true
+    -
+        name: supervisor
+        type: category
+        lowercase: true
+    -
+        name: mental_health_interview
+        type: category
+        lowercase: true
+    -
+        name: phys_health_interview
+        type: category
+        lowercase: true
+    -
+        name: mental_vs_physical
+        type: category
+        lowercase: true
+    -
+        name: obs_consequence
+        type: category
+        lowercase: true
+    -
+        name: age_range
+        type: category
+
+
+combiner:
+    type: concat
+    num_fc_layers: 1
+    fc_size: 64
+
+
+output_features:
+    -
+        name: treatment
+        type: category
+        lowercase: true
+
+training:
+    batch_size: 10
+    epochs: 7000
+    dropout_rate: 0.0
+    early_stop: 50
+
+preprocessing:
+    split_probabilities: [0.75, 0.2, 0.05]
+    stratify: treatment
